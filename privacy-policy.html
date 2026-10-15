@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi eJurnal SMKTri</title>
+<meta name="description" content="Kebijakan privasi aplikasi eJurnal SMKTri, SMK Negeri 3 Banjarbaru.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  /*
+    Layout: a single centered document column (max 680px) on a soft paper
+    ground, like a printed school policy handed across a desk — a running
+    header rail on the left (desktop only) tracks the current section.
+  */
+  :root {
+    --bg: #f3f1ea;
+    --paper: #fffdf8;
+    --fg: #1d2535;
+    --fg-muted: #5b6373;
+    --accent: #16335f;
+    --accent-soft: #e4ebf5;
+    --border: #e2ddd0;
+    --rule: #cfc8b6;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15181f;
+      --paper: #1b1f28;
+      --fg: #e8e6df;
+      --fg-muted: #9aa0ad;
+      --accent: #7fa3dd;
+      --accent-soft: #223049;
+      --border: #2b3040;
+      --rule: #333948;
+      color-scheme: dark;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    line-height: 1.65;
+    padding: 56px 16px 80px;
+  }
+
+  .shell {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px minmax(0, 680px);
+    gap: 48px;
+    justify-content: center;
+  }
+  @media (max-width: 860px) {
+    .shell { grid-template-columns: minmax(0, 1fr); }
+    .toc { display: none; }
+  }
+
+  .toc {
+    position: sticky;
+    top: 32px;
+    align-self: start;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+  }
+  .toc-label {
+    text-transform: uppercase;
+    color: var(--fg-muted);
+    letter-spacing: 0.1em;
+    margin: 0 0 14px;
+  }
+  .toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    border-left: 1px solid var(--rule);
+  }
+  .toc a {
+    display: block;
+    padding: 1px 0 1px 14px;
+    color: var(--fg-muted);
+    text-decoration: none;
+  }
+  .toc a:hover, .toc a:focus-visible { color: var(--accent); }
+
+  .doc {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 52px clamp(24px, 6vw, 64px) 64px;
+    min-width: 0;
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+
+  h1 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(1.9rem, 4.2vw, 2.6rem);
+    line-height: 1.15;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .subtitle {
+    color: var(--fg-muted);
+    font-size: 1rem;
+    margin: 0 0 8px;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    color: var(--fg-muted);
+    margin: 20px 0 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  .meta-row strong { color: var(--fg); font-weight: 500; }
+
+  .intro {
+    font-family: "Newsreader", Georgia, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--fg);
+    margin: 0 0 44px;
+    line-height: 1.6;
+  }
+
+  section { margin-bottom: 40px; scroll-margin-top: 24px; }
+  section:last-of-type { margin-bottom: 0; }
+
+  h2 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.35rem;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  h2 .num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  p { margin: 0 0 14px; max-width: 64ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 14px; padding-left: 1.2em; max-width: 62ch; }
+  li { margin-bottom: 7px; }
+  li:last-child { margin-bottom: 0; }
+
+  .table-wrap { overflow-x: auto; margin: 4px 0 18px; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 440px;
+    font-size: 0.88rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+    font-weight: 500;
+  }
+  tr:last-child td { border-bottom: none; }
+
+  .note {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    border-radius: 0 3px 3px 0;
+    font-size: 0.92rem;
+    margin: 4px 0 18px;
+  }
+  .note p { margin: 0; max-width: 58ch; }
+  .note p + p { margin-top: 8px; }
+
+  .contact-card {
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 20px 22px;
+    display: grid;
+    gap: 6px;
+    font-size: 0.92rem;
+  }
+  .contact-card .label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+  }
+  .contact-card .value {
+    font-weight: 500;
+    user-select: all;
+  }
+
+  .copy-btn {
+    margin-top: 10px;
+    align-self: start;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.74rem;
+    background: transparent;
+    border: 1px solid var(--rule);
+    color: var(--fg-muted);
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .copy-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  footer {
+    max-width: 680px;
+    margin: 40px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--fg-muted);
+    font-size: 0.8rem;
+    grid-column: 1 / -1;
+  }
+</style>
+</head>
+<body>
+
+<div class="shell">
+  <nav class="toc" aria-label="Daftar isi">
+    <p class="toc-label">Daftar Isi</p>
+    <ol>
+      <li><a href="#pendahuluan">1. Pendahuluan</a></li>
+      <li><a href="#data-dikumpulkan">2. Data yang Dikumpulkan</a></li>
+      <li><a href="#penggunaan">3. Penggunaan Data</a></li>
+      <li><a href="#izin-perangkat">4. Izin Perangkat</a></li>
+      <li><a href="#penyimpanan">5. Penyimpanan &amp; Keamanan</a></li>
+      <li><a href="#berbagi">6. Berbagi Data</a></li>
+      <li><a href="#data-siswa">7. Data Siswa</a></li>
+      <li><a href="#retensi">8. Retensi Data</a></li>
+      <li><a href="#hak-pengguna">9. Hak Pengguna</a></li>
+      <li><a href="#perubahan">10. Perubahan Kebijakan</a></li>
+      <li><a href="#kontak">11. Kontak</a></li>
+    </ol>
+  </nav>
+
+  <article class="doc">
+    <p class="eyebrow">Kebijakan Privasi</p>
+    <h1>eJurnal SMKTri</h1>
+    <p class="subtitle">Aplikasi jurnal mengajar, presensi, dan penilaian untuk guru SMK Negeri 3 Banjarbaru</p>
+    <div class="meta-row">
+      <span>Berlaku sejak <strong>15 Oktober 2026</strong></span>
+      <span>Penerbit <strong>SMK Negeri 3 Banjarbaru</strong></span>
+      <span>Paket aplikasi <strong>id.sch.smkn3banjarbaru.jurnal_mobile</strong></span>
+    </div>
+
+    <p class="intro">
+      Kebijakan ini menjelaskan data apa saja yang dikumpulkan dan diproses oleh
+      aplikasi eJurnal SMKTri, untuk apa data itu digunakan, dan bagaimana data
+      tersebut dijaga keamanannya.
+    </p>
+
+    <section id="pendahuluan">
+      <h2><span class="num">1.</span> Pendahuluan</h2>
+      <p>
+        eJurnal SMKTri adalah aplikasi internal yang digunakan oleh guru SMK
+        Negeri 3 Banjarbaru untuk mencatat jurnal pembelajaran, presensi siswa,
+        dan penilaian, menggantikan pencatatan manual di atas kertas. Aplikasi
+        ini terhubung ke sistem jurnal sekolah di
+        <strong>jurnal.smkn3banjarbaru.sch.id</strong> dan hanya dapat
+        digunakan oleh guru yang memiliki akun terdaftar di sistem tersebut.
+      </p>
+      <p>
+        Dengan masuk dan menggunakan aplikasi ini, pengguna (guru) menyetujui
+        pengumpulan dan penggunaan data sebagaimana dijelaskan dalam kebijakan
+        ini.
+      </p>
+    </section>
+
+    <section id="data-dikumpulkan">
+      <h2><span class="num">2.</span> Data yang Dikumpulkan</h2>
+      <p>Aplikasi mengumpulkan dan memproses data berikut:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Jenis data</th><th>Keterangan</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data akun guru</td>
+              <td>Nama dan email, diambil dari sistem jurnal sekolah saat login.</td>
+            </tr>
+            <tr>
+              <td>Data jurnal mengajar</td>
+              <td>Capaian pembelajaran, tujuan pembelajaran, dan kegiatan pembelajaran yang diisi guru per jam mengajar.</td>
+            </tr>
+            <tr>
+              <td>Data presensi</td>
+              <td>Status kehadiran siswa (Hadir/Izin/Sakit/Alfa) per pertemuan, yang diisi guru.</td>
+            </tr>
+            <tr>
+              <td>Data penilaian</td>
+              <td>Nilai, catatan, dan foto dokumentasi tugas per siswa, yang diisi guru.</td>
+            </tr>
+            <tr>
+              <td>Foto dokumentasi</td>
+              <td>Foto yang diambil lewat kamera atau dipilih dari galeri HP sebagai bukti penilaian tugas siswa.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Aplikasi <strong>tidak</strong> meminta data pribadi dari siswa secara
+        langsung — seluruh data siswa (nama, NIS, NISN, nilai, kehadiran)
+        berasal dari data yang sudah ada di sistem sekolah dan diisi oleh guru
+        sebagai bagian dari tugas administrasi mengajar.
+      </p>
+    </section>
+
+    <section id="penggunaan">
+      <h2><span class="num">3.</span> Penggunaan Data</h2>
+      <p>Data yang dikumpulkan digunakan semata-mata untuk:</p>
+      <ul>
+        <li>Menampilkan jadwal mengajar dan riwayat jurnal/presensi/nilai kepada guru yang bersangkutan.</li>
+        <li>Menyimpan jurnal, presensi, dan nilai ke sistem sekolah sebagai pengganti pencatatan manual.</li>
+        <li>Mengirim notifikasi pengingat jadwal mengajar.</li>
+        <li>Menghasilkan rekap dalam bentuk PDF untuk keperluan administrasi dan pelaporan sekolah.</li>
+      </ul>
+      <div class="note">
+        <p>
+          Aplikasi ini <strong>tidak</strong> menampilkan iklan dan
+          <strong>tidak</strong> menggunakan layanan analitik atau pelacakan
+          pihak ketiga. Tidak ada data yang dijual atau disewakan ke pihak
+          mana pun.
+        </p>
+      </div>
+    </section>
+
+    <section id="izin-perangkat">
+      <h2><span class="num">4.</span> Izin Perangkat</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Izin</th><th>Untuk apa</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kamera &amp; Galeri</td>
+              <td>Mengambil atau memilih foto dokumentasi tugas siswa pada fitur Penilaian. Foto hanya diunggah jika guru memilih untuk melampirkannya.</td>
+            </tr>
+            <tr>
+              <td>Notifikasi</td>
+              <td>Mengirim pengingat jadwal jam mengajar.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="penyimpanan">
+      <h2><span class="num">5.</span> Penyimpanan &amp; Keamanan</h2>
+      <p>
+        Seluruh data jurnal, presensi, dan nilai disimpan di server resmi
+        sekolah (jurnal.smkn3banjarbaru.sch.id), bukan di server pihak ketiga.
+        Sesi login (token akses) disimpan secara terenkripsi pada penyimpanan
+        aman bawaan sistem operasi perangkat (Android Keystore / iOS
+        Keychain), dan seluruh komunikasi antara aplikasi dan server
+        menggunakan koneksi HTTPS terenkripsi.
+      </p>
+    </section>
+
+    <section id="berbagi">
+      <h2><span class="num">6.</span> Berbagi Data</h2>
+      <p>
+        Data tidak dibagikan ke pihak ketiga mana pun di luar sistem sekolah.
+        Satu-satunya cara data meninggalkan aplikasi adalah saat guru secara
+        aktif memilih untuk membagikan hasil ekspor PDF (jurnal/presensi)
+        lewat fitur Bagikan ke aplikasi lain di HP-nya sendiri, seperti
+        WhatsApp atau Google Drive — tindakan ini sepenuhnya dikendalikan oleh
+        guru yang bersangkutan.
+      </p>
+    </section>
+
+    <section id="data-siswa">
+      <h2><span class="num">7.</span> Data Siswa</h2>
+      <p>
+        Aplikasi ini digunakan oleh guru, bukan oleh siswa. Data siswa yang
+        muncul di aplikasi (nama, NIS, NISN, nilai, status kehadiran) berasal
+        dari data akademik yang sudah dikelola sekolah, dan hanya diproses
+        untuk keperluan administrasi pembelajaran oleh guru yang mengajar
+        siswa tersebut. Karena sebagian siswa adalah anak di bawah umur,
+        sekolah bertanggung jawab memastikan data ini digunakan sesuai dengan
+        kebijakan perlindungan data sekolah yang berlaku.
+      </p>
+    </section>
+
+    <section id="retensi">
+      <h2><span class="num">8.</span> Retensi Data</h2>
+      <p>
+        Data jurnal, presensi, dan nilai disimpan selama diperlukan untuk
+        keperluan administrasi dan pelaporan akademik sekolah, mengikuti
+        kebijakan retensi data sekolah. Foto dokumentasi dapat dihapus kapan
+        saja oleh guru yang mengunggahnya melalui fitur hapus dokumentasi
+        pada aplikasi.
+      </p>
+    </section>
+
+    <section id="hak-pengguna">
+      <h2><span class="num">9.</span> Hak Pengguna</h2>
+      <p>
+        Guru dapat meminta koreksi atau penghapusan data yang telah dimasukkan
+        dengan menghubungi pihak sekolah, atau melalui kontak di bagian bawah
+        halaman ini. Permintaan terkait data siswa akan diteruskan sesuai
+        kebijakan administrasi akademik sekolah.
+      </p>
+    </section>
+
+    <section id="perubahan">
+      <h2><span class="num">10.</span> Perubahan Kebijakan</h2>
+      <p>
+        Kebijakan ini dapat diperbarui sewaktu-waktu mengikuti perubahan fitur
+        aplikasi atau ketentuan yang berlaku. Tanggal "Berlaku sejak" di atas
+        menunjukkan pembaruan terakhir.
+      </p>
+    </section>
+
+    <section id="kontak">
+      <h2><span class="num">11.</span> Kontak</h2>
+      <p>Pertanyaan seputar privasi dan data pada aplikasi ini dapat disampaikan ke:</p>
+      <div class="contact-card">
+        <span class="label">Email</span>
+        <span class="value" id="contact-email">sairi.jb14@gmail.com</span>
+        <button class="copy-btn" id="copy-btn" type="button">Salin email</button>
+      </div>
+    </section>
+  </article>
+
+  <footer>eJurnal SMKTri &middot; Kebijakan Privasi &middot; SMK Negeri 3 Banjarbaru</footer>
+</div>
+
+<script>
+  (function () {
+    var btn = document.getElementById('copy-btn');
+    var emailEl = document.getElementById('contact-email');
+    if (!btn || !emailEl) return;
+    btn.addEventListener('click', function () {
+      var text = emailEl.textContent.trim();
+      var done = function () {
+        var original = btn.textContent;
+        btn.textContent = 'Tersalin';
+        setTimeout(function () { btn.textContent = original; }, 1500);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done).catch(function () {
+          selectText(emailEl);
+        });
+      } else {
+        selectText(emailEl);
+      }
+    });
+    function selectText(el) {
+      var range = document.createRange();
+      range.selectNodeContents(el);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+    }
+  })();
+</script>
+</body>
+</html>
